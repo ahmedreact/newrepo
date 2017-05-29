@@ -1,12 +1,14 @@
 const express = require('express')
 
+// const path = require('path')
+
 const app = express()
 const bodyParser = require('body-parser')
 const userModel = require('./userModel.js').user
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
 
-app.use('/*', express.static('dist'))
+app.use('/', express.static('dist'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.disable('x-powered-by')
