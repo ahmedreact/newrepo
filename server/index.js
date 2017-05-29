@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const userModel = require('./userModel.js').user
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
+const path = require('path')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -152,5 +153,7 @@ app.get(
   },
 )
 
-app.use('/*', express.static('dist'))
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
 
