@@ -16,10 +16,10 @@ module.exports = {
       'styled-components',
     ],
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
+  // externals: {
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM',
+  // },
   output: {
     filename: '[name].[chunkhash].js',
     path: resolve(__dirname, '../dist'),
@@ -47,12 +47,12 @@ module.exports = {
       title: 'Sam Affiliates Portal',
       template: 'webpack/template.html',
     }),
-    // new OfflinePlugin({
-    //   ServiceWorker: {
-    //     navigateFallbackURL: '/',
-    //   },
-    //   AppCache: false,
-    // }),
+    new OfflinePlugin({
+      ServiceWorker: {
+        navigateFallbackURL: '/',
+      },
+      AppCache: false,
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
