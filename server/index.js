@@ -5,8 +5,8 @@ const bodyParser = require('body-parser')
 const userModel = require('./userModel.js').user
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
-const path = require('path')
 
+app.use('/*', express.static('dist'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.disable('x-powered-by')
@@ -152,7 +152,4 @@ app.get(
     res.end(JSON.stringify({ sales: 3423423, CR: 0.3 }))
   },
 )
-
-app.use('/*', express.static('dist'))
-
 
