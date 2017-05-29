@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "description": "Sam-affiliates portal",
   "engines": {
-    "node": "6.10.3"
+    "node": "6.10.3",
+    "npm": "3.10.10"
   },
   "scripts": {
     "start": "./node_modules/.bin/babel-node -- server/index.js",
