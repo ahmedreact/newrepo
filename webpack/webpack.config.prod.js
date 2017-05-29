@@ -28,7 +28,7 @@ module.exports = {
         include: [resolve(__dirname, '../src')],
         loader: 'babel-loader',
         options: {
-          presets: ['latest', 'react', 'stage-2'],
+          presets: ['es2017', 'react', 'stage-0'],
         },
       },
     ],
