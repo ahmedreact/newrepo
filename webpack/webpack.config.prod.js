@@ -28,8 +28,7 @@ module.exports = {
         include: [resolve(__dirname, '../src')],
         loader: 'babel-loader',
         options: {
-          presets: [("babel-preset-es2015", "babel-preset-es2016",
-          "babel-preset-es2017").map(require.resolve)],
+          presets: [("es2015", "es2016", "es2017")],
         },
       },
     ],
