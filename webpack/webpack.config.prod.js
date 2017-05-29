@@ -26,7 +26,11 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: [resolve(__dirname, '../src')],
-        use: 'babel-loader',
+        loader: 'babel-loader',
+        options: {
+          presets: [("babel-preset-es2015", "babel-preset-es2016",
+          "babel-preset-es2017").map(require.resolve)],
+        },
       },
     ],
   },
