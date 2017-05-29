@@ -12,7 +12,7 @@
     "server": "nodemon --exec babel-node -- server/index.js",
     "dev": "npm run server & webpack-dev-server --open --config webpack/webpack.config.dev.js",
     "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js  && cp -a assets/ dist/",
-    "prod": "serve ./dist -s",
+    "prod": "cd dist && python -m SimpleHTTPServer 8080",
     "lint": "eslint src",
     "ngrok": "ngrok http -region eu 8080",
     "test": "jest"
