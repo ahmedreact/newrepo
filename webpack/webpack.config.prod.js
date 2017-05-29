@@ -26,10 +26,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: [resolve(__dirname, '../src')],
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2017', 'react', 'stage-0'],
-        },
+        use: 'babel-loader',
       },
     ],
   },
