@@ -28,7 +28,7 @@ module.exports = {
         include: [resolve(__dirname, '../src')],
         loader: 'babel-loader',
         options: {
-          presets: ['es2017', 'es2015', 'react', 'stage-0'],
+          presets: [require.resolve('babel-preset-es2015'), 'react', 'stage-0'],
         },
       },
     ],
@@ -55,5 +55,6 @@ module.exports = {
         API_ROOT: JSON.stringify('http://www.sam-affiliate-portal.herokuapp.com'),
       },
     }),
+    require.resolve('babel-plugin-transform-runtime'),
   ],
 }
