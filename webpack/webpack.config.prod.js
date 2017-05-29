@@ -16,10 +16,6 @@ module.exports = {
       'styled-components',
     ],
   },
-  // externals: {
-  //   react: 'React',
-  //   'react-dom': 'ReactDOM',
-  // },
   output: {
     filename: '[name].[chunkhash].js',
     path: resolve(__dirname, '../dist'),
