@@ -14,6 +14,7 @@ module.exports = {
       'redux',
       'redux-thunk',
       'styled-components',
+      'semantic-ui-react',
     ],
   },
   output: {
