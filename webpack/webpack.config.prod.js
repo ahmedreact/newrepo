@@ -40,12 +40,12 @@ module.exports = {
       title: 'Sam Affiliates Portal',
       template: 'webpack/template.html',
     }),
-    new OfflinePlugin({
-      ServiceWorker: {
-        navigateFallbackURL: '/',
-      },
-      AppCache: false,
-    }),
+    // new OfflinePlugin({
+    //   ServiceWorker: {
+    //     navigateFallbackURL: '/',
+    //   },
+    //   AppCache: false,
+    // }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
