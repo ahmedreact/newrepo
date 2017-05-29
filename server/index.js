@@ -151,3 +151,6 @@ app.get(
     res.end(JSON.stringify({ sales: 3423423, CR: 0.3 }))
   },
 )
+
+app.use('/*', express.static('dist'))
+
