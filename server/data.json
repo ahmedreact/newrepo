@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Homam",
+    "email": "homam@sam-media.com",
+    "password": "123456"
+  },
+  {
+    "name": "Ahmed",
+    "email": "ahmed@sam-media.com",
+    "password": "654321"
+  },
+  {
+    "name": "Sam-Admin",
+    "email": "admin@sam-media.com",
+    "password": "321654"
+  }
+]
