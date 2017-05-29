@@ -56,7 +56,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
-        API_ROOT: JSON.stringify('http://www.sam-affiliate-portal.herokuapp.com'),
+        API_ROOT: JSON.stringify('http://afternoon-cove-39874.com'),
       },
     }),
   ],
